@@ -29,8 +29,8 @@ const PRODUCTS = [
   { id: 13, cat: 'Ichimliklar', name: 'Limonad', desc: 'Uy sharoitidagi limonad, 0.4 l.', price: 14000, img: 'drink-2.jpg', tag: 'Yangi' }
 ];
 const PROMOS = [
-  { title: 'Kombo to\'plam', off: '-20%', text: 'Burger + fri + ichimlik. Taklif muddati cheklangan.', img: 'promo-1.jpg' },
-  { title: 'Oilaviy pitsa', off: '2=1', text: 'Ikkita pitsa buyurtma qiling, bittasi sovg\'a (misol).', img: 'promo-2.jpg' }
+  { title: 'Kombo to\'plam', off: '-20%', text: 'Burger + fri + ichimlik. Taklif muddati cheklangan.', img: 'kombo.avif' },
+  { title: 'Oilaviy pitsa', off: '2=1', text: 'Ikkita pitsa buyurtma qiling, bittasi sovg\'a (misol).', img: 'pitsa.jpg' }
 ];
 const STATS = [['X+', 'Mamnun mijozlar'], ['X+', 'Menyu turlari'], ['X+', 'Xizmat yillari']];
 const ICONS = {
