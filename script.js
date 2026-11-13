@@ -4,11 +4,11 @@
 /* ===== EDITABLE CONTENT (sample data: replace with real info) ===== */
 const CONFIG = {
   telegramUser: 'jajjifastfood',            // Telegram username (without @) that receives orders
-  telegramUrl: 'https://t.me/jajjifastfood',
-  instagramUrl: 'https://instagram.com/jajjifastfood',
+  telegramUrl: 'https://t.me/metaitschool',
+  instagramUrl: 'https://instagram.com/metaitschool',
   address: 'Manzil: Andijon shahar, Leninskiy ko\'chasi',
   phone: '+998 90 123 23 23',
-  hours: 'Har kuni 10:00 — 23:00',
+  hours: 'Har kuni 09:00 — 22:00',
   mapSrc: ''                                 // paste Google Maps embed URL here
 };
 const CATEGORIES = ['Barchasi', 'Burgerlar', 'Lavashlar', 'Hot-doglar', 'Pitsalar', 'Fri va gazaklar', 'Ichimliklar'];
