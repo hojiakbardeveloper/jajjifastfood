@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Jajji Fast Food — Mazali ta'm, unutilmas lazzat</title>
+<meta name="description" content="Jajji Fast Food: burgerlar, lavashlar, hot-doglar, pitsalar va boshqa mazali taomlar. Menyuni ko'ring va buyurtma bering.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Jajji Fast Food — Mazali ta'm, unutilmas lazzat">
+<meta property="og:description" content="Sevimli ta'mlaringizdan bahramand bo'ling. Menyuni ko'ring va buyurtma bering.">
+<meta property="og:image" content="assets/images/hero-food.png">
+<meta name="theme-color" content="#FF4500">
+<link rel="icon" href="assets/images/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Manrope:wght@400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<a class="skip" href="#menyu">Asosiy mazmunga o'tish</a>
+
+<header class="header" id="header">
+  <div class="wrap bar">
+    <a class="logo" href="#bosh-sahifa" aria-label="Jajji Fast Food — bosh sahifa">
+      <img src="assets/images/logo.png" alt="Jajji Fast Food logosi"><span>JAJJI</span>
+    </a>
+    <nav id="nav" class="nav" aria-label="Asosiy menyu">
+      <a href="#bosh-sahifa">Bosh sahifa</a>
+      <a href="#menyu">Menyu</a>
+      <a href="#biz-haqimizda">Biz haqimizda</a>
+      <a href="#galereya">Galereya</a>
+      <a href="#aloqa">Aloqa</a>
+    </nav>
+    <button class="btn btn-sm" id="cartBtn" aria-label="Savatni ochish">Buyurtma berish <b id="cartCount" class="count">0</b></button>
+    <button class="burger" id="burger" aria-label="Menyuni ochish" aria-expanded="false" aria-controls="nav"><i></i><i></i><i></i></button>
+  </div>
+</header>
+
+<main>
+<section class="hero" id="bosh-sahifa">
+  <div class="wrap hero-grid">
+    <div class="hero-text">
+      <h1>MAZALI TA'M — <span>UNUTILMAS</span> LAZZAT!</h1>
+      <p>Jajji Fast Food bilan sevimli ta'mlaringizdan bahramand bo'ling. Har bir luqmada sifat, mazali ta'm va ajoyib kayfiyat!</p>
+      <div class="actions">
+        <a class="btn btn-light" href="#menyu">Menyuni ko'rish</a>
+        <button class="btn btn-dark" data-open-cart>Buyurtma berish</button>
+      </div>
+    </div>
+    <div class="hero-img"><img src="./images/asosiy.avif" alt="Jajji Fast Food asosiy taomi"></div>
+  </div>
+</section>
+
+<section class="sec" id="mashhur">
+  <div class="wrap">
+    <div class="head"><h2>ENG MASHHUR TAOMLARIMIZ</h2><p>Eng ko'p sevilgan va xaridorlarimiz tanlagan ta'mlar.</p></div>
+    <div class="carousel" id="featured" aria-roledescription="karusel" aria-label="Mashhur taomlar">
+      <div class="viewport"><div class="track"></div></div>
+      <button class="cnav prev" aria-label="Oldingi">‹</button><button class="cnav next" aria-label="Keyingi">›</button>
+      <div class="dots"></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec dark" id="menyu">
+  <div class="wrap">
+    <div class="head"><h2>MENU</h2></div>
+    <div class="tabs" id="tabs" role="tablist" aria-label="Menyu toifalari"></div>
+    <div class="grid" id="menuGrid" aria-live="polite"></div>
+  </div>
+</section>
+
+<section class="sec" id="takliflar">
+  <div class="wrap">
+    <div class="head"><h2>MAXSUS TAKLIFLAR</h2></div>
+    <div class="promos" id="promos"></div>
+  </div>
+</section>
+
+<section class="sec about" id="biz-haqimizda">
+  <div class="wrap about-grid">
+    <div class="about-img reveal"><img src="assets/images/restaurant.jpg" alt="Jajji Fast Food restorani ichki ko'rinishi"></div>
+    <div class="reveal">
+      <h2>BIZ HAQIMIZDA</h2>
+      <p>Jajji Fast Food — mazali taomlar, sifatli xizmat va yoqimli muhitni birlashtirgan maskan. Biz mijozlarimizga har bir tashrifda ajoyib ta'm va unutilmas taassurot ulashishga intilamiz.</p>
+      <p>Falsafamiz oddiy: yangi mahsulotlar, e'tibor bilan tayyorlangan taom va mehmonga hurmat. Sizning tabassumingiz — bizning eng yaxshi bahomiz.</p>
+      <dl class="stats" id="stats"></dl>
+    </div>
+  </div>
+</section>
+
+<section class="sec dark" id="nega">
+  <div class="wrap">
+    <div class="head"><h2>NEGA AYNAN JAJJI FAST FOOD?</h2></div>
+    <div class="why" id="why"></div>
+  </div>
+</section>
+
+<section class="sec" id="galereya">
+  <div class="wrap">
+    <div class="head"><h2>TA'M VA LAZZAT GALEREYASI</h2></div>
+    <div class="carousel" id="gallery" aria-roledescription="karusel" aria-label="Galereya">
+      <div class="viewport"><div class="track"></div></div>
+      <button class="cnav prev" aria-label="Oldingi">‹</button><button class="cnav next" aria-label="Keyingi">›</button>
+      <div class="dots"></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec dark" id="fikrlar">
+  <div class="wrap">
+    <div class="head"><h2>MIJOZLARIMIZ FIKRI</h2></div>
+    <div class="carousel" id="reviews" aria-roledescription="karusel" aria-label="Mijozlar fikri">
+      <div class="viewport"><div class="track"></div></div>
+      <button class="cnav prev" aria-label="Oldingi">‹</button><button class="cnav next" aria-label="Keyingi">›</button>
+      <div class="dots"></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="aloqa">
+  <div class="wrap">
+    <div class="head"><h2>BIZ BILAN BOG'LANING</h2></div>
+    <div class="contact-grid">
+      <div>
+        <ul class="info" id="info"></ul>
+        <div class="map" id="map"></div>
+      </div>
+      <form id="form" class="form" novalidate>
+        <label>Ism<input name="name" autocomplete="name" required><small class="err" aria-live="polite"></small></label>
+        <label>Telefon raqam<input name="phone" type="tel" inputmode="tel" autocomplete="tel" placeholder="+998 90 123 45 67" required><small class="err" aria-live="polite"></small></label>
+        <label>Buyurtma haqida izoh<textarea name="note" rows="4"></textarea><small class="err" aria-live="polite"></small></label>
+        <button class="btn" type="submit">Telegram orqali yuborish</button>
+        <p class="status" id="formStatus" role="status"></p>
+      </form>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="footer">
+  <div class="wrap foot-grid">
+    <div><a class="logo" href="#bosh-sahifa"><img src="assets/images/logo.png" alt="Jajji Fast Food logosi"><span>JAJJI</span></a>
+      <p>Mazali taomlar, sifatli xizmat va yoqimli muhit.</p></div>
+    <nav aria-label="Pastki menyu"><a href="#menyu">Menyu</a><a href="#takliflar">Maxsus takliflar</a><a href="#biz-haqimizda">Biz haqimizda</a><a href="#galereya">Galereya</a><a href="#aloqa">Aloqa</a></nav>
+    <div id="footInfo"></div>
+  </div>
+  <p class="copy">© 2026 Jajji Fast Food. Barcha huquqlar himoyalangan.</p>
+</footer>
+
+<aside class="cart" id="cart" aria-label="Buyurtma savati" hidden>
+  <div class="cart-head"><h3>Buyurtmangiz</h3><button id="cartClose" aria-label="Yopish">×</button></div>
+  <ul id="cartList"></ul>
+  <div class="cart-foot"><p>Jami: <b id="cartTotal">0 so'm</b></p><button class="btn" id="checkout">Telegram orqali yuborish</button></div>
+</aside>
+<div class="scrim" id="scrim" hidden></div>
+
+<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Rasmni ko'rish" hidden>
+  <button class="lb-x" aria-label="Yopish">×</button><button class="lb-p" aria-label="Oldingi">‹</button>
+  <figure><div id="lbImg"></div><figcaption id="lbCap"></figcaption></figure>
+  <button class="lb-n" aria-label="Keyingi">›</button>
+</div>
+
+<div class="toast" id="toast" role="status"></div>
+<button class="totop" id="totop" aria-label="Yuqoriga qaytish" hidden>↑</button>
+<script src="./script.js"></script>
+</body>
+</html>
